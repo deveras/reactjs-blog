@@ -7,6 +7,16 @@
     "lint": "eslint '**/*.js'",
     "lint:fix": "prettier-eslint \"$(pwd)/**/*.js\" --write"
   },
+  "husky" : {
+    "hooks" : {
+      "pre-commit" : "lint-staged"
+    }
+  },
+  "lint-staged" : {
+    "*.js": [
+      "npm run lint:fix"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deveras/reactjs-blog.git"
@@ -29,6 +39,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0"
   }
