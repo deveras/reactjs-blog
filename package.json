@@ -1,0 +1,20 @@
+{
+  "name": "reactjs-blog",
+  "version": "1.0.0",
+  "description": "Personal blog done with reactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deveras/reactjs-blog.git"
+  },
+  "keywords": [ "reactJS", "blog" ],
+  "author": "Andre R. Ferreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deveras/reactjs-blog/issues"
+  },
+  "homepage": "https://github.com/deveras/reactjs-blog#readme"
+}
