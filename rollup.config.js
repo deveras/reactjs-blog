@@ -1,19 +1,40 @@
+import babel from 'rollup-plugin-babel'
+import resolve from 'rollup-plugin-node-resolve'
+import { terser } from 'rollup-plugin-terser'
+
 const dist = 'dist'
+const bundle = 'bundle'
+const production = !process.env.ROLLUP_WATCH
 
 export default {
   input: 'source/js/index.js',
   output: [
     {
-      file: `${dist}/bundle.cjs.js`,
+      file: `${dist}/${bundle}.cjs.js`,
       format: 'cjs'
     },
     {
-      file: `${dist}/bundle.esm.js`,
+      file: `${dist}/${bundle}.esm.js`,
       format: 'esm'
     },
     {
-      file: `${dist}/bundle.umd.js`,
-      format: 'umd'
+      name: 'ANDREchangeME',
+      file: `${dist}/${bundle}.umd.js`,
+      format: 'umd',
+      globals: {
+        react: 'React',
+        'react-dom': 'ReactDOM'
+      }
     }
-  ]
+  ],
+
+  plugins: [
+    resolve(),
+    babel({
+      exclude: 'node_modules/**'
+    }),
+    production && terser()
+  ],
+
+  external: ['react']
 }

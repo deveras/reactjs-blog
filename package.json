@@ -7,7 +7,7 @@
     "lint": "eslint '**/*.js'",
     "lint:fix": "prettier-eslint \"$(pwd)/**/*.js\" --write",
     "clean": "rimraf dist",
-    "prebuild" : "npm run clean",
+    "prebuild": "npm run clean",
     "build": "rollup -c"
   },
   "husky": {
@@ -35,6 +35,9 @@
   },
   "homepage": "https://github.com/deveras/reactjs-blog#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
@@ -48,6 +51,8 @@
     "prettier-eslint-cli": "^5.0.0",
     "rimraf": "^3.0.2",
     "rollup": "^1.31.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.2.0"
   }
 }
