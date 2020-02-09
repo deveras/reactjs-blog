@@ -4,17 +4,32 @@
   "description": "Personal blog done with reactJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "prettier-eslint \"$(pwd)/**/*.js\" --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deveras/reactjs-blog.git"
   },
-  "keywords": [ "reactJS", "blog" ],
+  "keywords": [
+    "reactJS",
+    "blog"
+  ],
   "author": "Andre R. Ferreira",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/deveras/reactjs-blog/issues"
   },
-  "homepage": "https://github.com/deveras/reactjs-blog#readme"
+  "homepage": "https://github.com/deveras/reactjs-blog#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0"
+  }
 }
