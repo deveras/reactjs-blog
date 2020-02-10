@@ -1,10 +1,10 @@
-import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
-import { terser } from 'rollup-plugin-terser'
+import babel from 'rollup-plugin-babel';
+import resolve from 'rollup-plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 
-const dist = 'dist'
-const bundle = 'bundle'
-const production = !process.env.ROLLUP_WATCH
+const dist = 'dist';
+const bundle = 'bundle';
+const production = !process.env.ROLLUP_WATCH;
 
 export default {
   input: 'source/js/index.js',
@@ -37,4 +37,4 @@ export default {
   ],
 
   external: ['react']
-}
+};
