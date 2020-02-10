@@ -2,6 +2,8 @@ import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import copy from 'rollup-plugin-copy';
+import serve from 'rollup-plugin-serve';
+import livereload from 'rollup-plugin-livereload';
 
 const dist = 'dist';
 const bundle = 'bundle';
@@ -41,7 +43,17 @@ export default {
         { src: 'source/styles/imgs/**/*', dest: 'dist/styles/imgs' },
         { src: 'source/styles/fonts/**/*', dest: 'dist/styles/fonts' }
       ]
-    })
+    }),
+    serve({
+      open: true,
+      contentBase: `${dist}`,
+      host: 'localhost',
+      port: 8080,
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
+    }),
+    livereload()
   ],
 
   external: ['react']
