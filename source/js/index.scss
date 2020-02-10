@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+$colorGreen: #0F0;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: bar, Arial, Helvetica;
+}
+
+#app {
+  margin: 0;
+
+  > div {
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+
+    h1 {
+      color: $colorGreen;
+    }
+  }
+}
