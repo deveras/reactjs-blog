@@ -20,6 +20,21 @@
       "npm run lint:fix"
     ]
   },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "modules": false,
+          "targets": {
+            "browsers": "> 0.25%, ie 11, not op_mini all, not dead",
+            "node": 10
+          }
+        }
+      ],
+      "@babel/react"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deveras/reactjs-blog.git"
