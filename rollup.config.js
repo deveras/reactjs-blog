@@ -16,6 +16,9 @@ const production = !process.env.ROLLUP_WATCH;
 
 export default {
   input: 'source/js/index.js',
+  watch: {
+    clearScreen: false
+  },
   output: [
     {
       file: `${dist}/${bundle}.cjs.js`,
@@ -94,7 +97,10 @@ export default {
         'Access-Control-Allow-Origin': '*'
       }
     }),
-    livereload()
+    livereload({
+      watch: 'dist',
+      verbose: true
+    })
   ],
 
   external: ['react']
