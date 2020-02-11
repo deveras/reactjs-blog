@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#socialMedia {
+  margin-top: 10px;
+  text-align: center;
+
+  ul li {
+    display: inline-block;
+    margin-right: 8px;
+
+    a {
+
+      img {
+        border: 1px solid lightgrey;
+        background-color: lightgrey;
+        border-radius: 25%;
+        height: 22px;
+        width: 22px;
+      }
+
+      &:hover img {
+        border: 1px solid white;
+        background-color: white;
+      }
+    }
+  }
+}
