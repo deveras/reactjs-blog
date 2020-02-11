@@ -1,23 +1,28 @@
 @charset "UTF-8";
 
-$colorGreen: #0F0;
-
 * {
   margin: 0;
   padding: 0;
   font-family: bar, Arial, Helvetica;
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+
 #app {
-  margin: 0;
+  display: flex;
+  flex-direction:row;
+  min-height: 100vh;
 
-  > div {
-    height: 100%;
-    border: 1px solid black;
-    text-align: center;
-
-    h1 {
-      color: $colorGreen;
-    }
+  &> div:first-of-type {
+    order: 2;
+    flex: 1;
   }
 }
