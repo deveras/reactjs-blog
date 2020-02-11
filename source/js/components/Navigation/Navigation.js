@@ -1,8 +1,9 @@
 import React from 'react';
+import * as PropTypes from 'prop-types';
 
 import './Navigation.scss';
 
-function Navigation () {
+function Navigation (props) {
   // @TODO: move this to a future app context
   var navigationItems = [
     {
@@ -44,7 +45,7 @@ function Navigation () {
   ];
 
   return (
-    <nav>
+    <nav className={props.show ? 'show' : ''}>
       <ul>
         {navigationItems.map((menuItem, iterator) => (
           <li key={iterator}>
@@ -62,5 +63,13 @@ function Navigation () {
     </nav>
   );
 }
+
+Navigation.defaultProps = {
+  show: false
+};
+
+Navigation.propTypes = {
+  show: PropTypes.bool.isRequired
+};
 
 export default Navigation;

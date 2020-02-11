@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 #userCard {
   border: 1px solid #343434;
@@ -14,7 +14,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/styles/imgs/andreFerreiraMSc.jpg");
+    background-image: url('/styles/imgs/andreFerreiraMSc.jpg');
   }
 
   h1 {

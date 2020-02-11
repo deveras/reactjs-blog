@@ -1,7 +1,17 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 #app > aside nav {
   margin-top: 50px;
+
+  &.show {
+    display:block;
+    margin-top: 0;
+    background-color: #343434;
+
+    ul {
+      margin-top: 0;
+    }
+  }
 
   ul {
     position: relative;
@@ -38,7 +48,7 @@
         &:after {
           right: 25px;
           position: absolute;
-          content: ">";
+          content: '>';
           font-size: 15px;
           color: grey;
         }
