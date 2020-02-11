@@ -14,7 +14,7 @@ function SocialMedia () {
     {
       link: 'linkedIn',
       imgSrc: 'styles/imgs/linkedin.png',
-      title: 'Navigate to LinkedIn and connect with R. Ferreira',
+      title: 'Navigate to LinkedIn and connect with André R. Ferreira',
       hreflang: 'en'
     },
     {
