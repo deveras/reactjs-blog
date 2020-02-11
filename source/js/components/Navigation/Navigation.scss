@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#app > aside nav {
+  margin-top: 50px;
+
+  ul {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    list-style: none;
+
+    li {
+      display: block;
+      border-bottom: 1px solid grey;
+      line-height: 50px;
+      text-align: left;
+
+      &:first-of-type {
+        border-top: 1px solid grey;
+      }
+
+      a {
+        display: block;
+        padding-left: 40px;
+        color: #fff;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+        background-color: transparent;
+
+        &:hover {
+          padding-left: 50px;
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        &:after {
+          right: 25px;
+          position: absolute;
+          content: ">";
+          font-size: 15px;
+          color: grey;
+        }
+      }
+    }
+  }
+}
+
+
