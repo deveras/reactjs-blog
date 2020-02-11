@@ -34,7 +34,8 @@ export default {
       format: 'umd',
       globals: {
         react: 'React',
-        'react-dom': 'ReactDOM'
+        'react-dom': 'ReactDOM',
+        'prop-types': 'PropTypes'
       }
     }
   ],
@@ -107,5 +108,5 @@ export default {
     })
   ],
 
-  external: ['react']
+  external: ['react', 'react-dom', 'prop-types']
 };
