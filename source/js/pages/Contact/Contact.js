@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactRouterDOM from 'react-router-dom';
 
+import ContactForm from '../../components/ContactForm/ContactForm';
+
 import './Contact.scss';
 
 function Contact () {
@@ -77,6 +79,10 @@ function Contact () {
           Waiting for them to be published... stay tuned!
         </p>
       </article>
+
+      <aside id="contactForm">
+        <ContactForm />
+      </aside>
     </section>
   );
 }

@@ -1,0 +1,90 @@
+@charset 'UTF-8';
+
+#contactForm {
+  order: 1;
+  padding-left: 20px;
+
+  form {
+    border: 1px solid grey;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 2px 4px 10px 5px #888887;
+    background-color: #FFF;
+  }
+
+  label {
+    display: block;
+    margin: 17px 0 5px 0;
+    background-color: white;
+    width: 150px;
+    font-size: 12px;
+    z-index: 999;
+  }
+
+  input {
+    display: block;
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding: 5px;
+    height: 30px;
+    width: 240px;
+    outline: none;
+  }
+  textarea {
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding: 5px;
+    height: 80px;
+    width: 240px;
+    overflow: auto;
+    resize: vertical;
+    outline: none;
+    min-height: 80px;
+  }
+
+  p {
+    margin-top: 4px;
+    color: red;
+    font-size: 10px;
+  }
+
+  p:last-of-type {
+    margin-top: 0;
+  }
+
+  #submitted p {
+    margin: 40px 0;
+    color: #777777;
+    font-size: 12px;
+  }
+
+  #submitted p:first-of-type {
+    font-size: 14px;
+  }
+
+  button {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 200px;
+    color: white;
+    font-size: 15px;
+    background-color: #777;
+  }
+}
+
+
+
+@media (max-width: 1016px) {
+  #contactForm form {
+    margin-bottom: 30px;
+    width: calc(100% - 20px);
+
+    input, textarea {
+      width: 100%;
+    }
+  }
+}
