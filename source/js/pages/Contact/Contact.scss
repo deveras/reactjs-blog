@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+#contact aside {
+  order: 2;
+  margin-top: 60px;
+  margin-right: 40px;
+  width: 280px;
+  color: #000;
+  text-align: left;
+  align-items: stretch;
+
+
+  h2 {
+    border-bottom: 1px solid #CCC;
+    margin-right: 20px;
+    line-height: 25px;
+    font-family: 'arial';
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      h3 {
+        margin: 20px 0 5px 0;
+        font-size: 13px;
+        font-weight: normal;
+      }
+
+      p {
+        font-size: 11px;
+        color: #777;
+      }
+    }
+  }
+}
