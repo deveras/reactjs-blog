@@ -6,19 +6,19 @@ function SocialMedia () {
   // @TODO: move this to a future app context
   const socialMediaItems = [
     {
-      link: 'twitter',
+      link: 'https://twitter.com/deveras77',
       imgSrc: 'styles/imgs/twitter.png',
       title: 'Navigate to Twitter and follow André R. Ferreira',
       hreflang: 'en'
     },
     {
-      link: 'linkedIn',
+      link: 'https://www.linkedin.com/in/andreraposoferreira',
       imgSrc: 'styles/imgs/linkedin.png',
       title: 'Navigate to LinkedIn and connect with André R. Ferreira',
       hreflang: 'en'
     },
     {
-      link: 'gitHub',
+      link: 'https://github.com/deveras',
       imgSrc: 'styles/imgs/github.png',
       title: 'Navigate to Github and follow André R. Ferreira',
       hreflang: 'en'
