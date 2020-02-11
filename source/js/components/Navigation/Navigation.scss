@@ -47,4 +47,8 @@
   }
 }
 
-
+@media (max-width: 1286px) {
+  #app > aside nav {
+    display: none;
+  }
+}

@@ -55,3 +55,28 @@ html, body {
     }
   }
 }
+
+
+@media (max-width: 1286px) {
+  #app {
+    flex-direction: column;
+
+    section {
+
+      &:first-of-type {
+        margin-top: 40px;
+        width: auto;
+      }
+      article {
+        h1 {
+          padding-right: 0px;
+        }
+
+        &> p {
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+}
+

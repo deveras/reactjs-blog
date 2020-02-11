@@ -4,7 +4,7 @@ import './UserCard.scss';
 
 function UserCard () {
   return (
-    <div id="card">
+    <div id="userCard">
       <a href="/" rel="home">
         <div title="André R. Ferreira, MSc photograph"></div>
       </a>

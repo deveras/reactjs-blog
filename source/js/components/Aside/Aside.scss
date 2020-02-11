@@ -1,14 +1,19 @@
 @charset "UTF-8";
 
-#app {
+#app > aside {
+  order: 1;
+  align-items: stretch;
+  align-content: stretch;
+  width: 220px;
+  color: #FFF;
+  background-color: #343434;
+  z-index: 10;
+}
 
-  &> aside {
-    order: 1;
-    align-items: stretch;
-    align-content: stretch;
-    width: 220px;
-    color: #FFF;
-    background-color: #343434;
-    z-index: 10;
+
+@media (max-width: 1286px) {
+  #app > aside {
+    width: 100%;
+    background-color: transparent;
   }
 }
