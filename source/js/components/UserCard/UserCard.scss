@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#card {
+  border: 1px solid #343434;
+  background-color: #343434;
+  text-align: center;
+
+  a div {
+    float: none;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 50px auto 0.75em;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/styles/imgs/andreFerreiraMSc.jpg");
+  }
+
+  h1 {
+    font-size: 15px;
+    font-weight: normal;
+  }
+}

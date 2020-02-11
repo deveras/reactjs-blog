@@ -1,11 +1,13 @@
 import React from 'react';
 
+import UserCard from '../UserCard/UserCard';
+
 import './Aside.scss';
 
 function Aside () {
   return (
     <aside tabIndex="0">
-      <h1>Aside</h1>
+      <UserCard />
     </aside>
   );
 }
