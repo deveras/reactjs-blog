@@ -35,7 +35,8 @@ export default {
       globals: {
         react: 'React',
         'react-dom': 'ReactDOM',
-        'prop-types': 'PropTypes'
+        'prop-types': 'PropTypes',
+        'react-router-dom': 'ReactRouterDOM'
       }
     }
   ],
@@ -100,7 +101,8 @@ export default {
         Pragma: 'no-cache',
         Expires: 0,
         Vary: '*'
-      }
+      },
+      historyApiFallback: true
     }),
     livereload({
       watch: 'dist',
@@ -108,5 +110,5 @@ export default {
     })
   ],
 
-  external: ['react', 'react-dom', 'prop-types']
+  external: ['react', 'react-dom', 'prop-types', 'react-router-dom']
 };
