@@ -4,13 +4,11 @@ import './Resources.scss';
 
 function Resources () {
   return (
-    <div>
-      <section>
-        <article>
-          <h1>Resources</h1>
-        </article>
-      </section>
-    </div>
+    <section>
+      <article>
+        <h1>Resources</h1>
+      </article>
+    </section>
   );
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactRouterDOM from 'react-router-dom';
 import * as PropTypes from 'prop-types';
 
 import './Navigation.scss';
@@ -49,14 +50,15 @@ function Navigation (props) {
       <ul>
         {navigationItems.map((menuItem, iterator) => (
           <li key={iterator}>
-            <a
-              href={menuItem.link}
+            <ReactRouterDOM.Link
+              to={menuItem.link}
               target="_self"
               title={menuItem.title}
               hrefLang={menuItem.hreflang}
+              onClick={props.toggleShow}
             >
               {menuItem.description}
-            </a>
+            </ReactRouterDOM.Link>
           </li>
         ))}
       </ul>
@@ -69,7 +71,8 @@ Navigation.defaultProps = {
 };
 
 Navigation.propTypes = {
-  show: PropTypes.bool.isRequired
+  show: PropTypes.bool.isRequired,
+  toggleShow: PropTypes.func.isRequired
 };
 
 export default Navigation;

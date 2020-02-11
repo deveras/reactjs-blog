@@ -4,13 +4,11 @@ import './About.scss';
 
 function About () {
   return (
-    <div>
-      <section>
-        <article>
-          <h1>Personal Biography</h1>
-        </article>
-      </section>
-    </div>
+    <section>
+      <article>
+        <h1>Personal Biography</h1>
+      </article>
+    </section>
   );
 }
 

@@ -4,13 +4,11 @@ import './Contact.scss';
 
 function Contact () {
   return (
-    <div>
-      <section>
-        <article>
-          <h1>Contacts</h1>
-        </article>
-      </section>
-    </div>
+    <section>
+      <article>
+        <h1>Contacts</h1>
+      </article>
+    </section>
   );
 }
 
