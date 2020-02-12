@@ -85,7 +85,10 @@ export default {
             'string-quotes': 'single'
           }
         }),
-        postcssReporter()
+        postcssReporter({
+          clearReportedMessages: true,
+          throwError: true
+        })
       ],
       output: `${dist}/styles/style.css`,
       throwOnError: !process.env.ROLLUP_WATCH
