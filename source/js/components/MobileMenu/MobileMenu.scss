@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 #mobileMenu {
-  display: block;
+  display: none;
   position: absolute;
   right: 20px;
   top: 30px;
@@ -45,3 +45,10 @@
     }
   }
 }
+
+@media (max-width: 1286px) {
+  #mobileMenu {
+    display: block;
+  }
+}
+
