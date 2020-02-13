@@ -7,19 +7,19 @@ function SocialMedia () {
   const socialMediaItems = [
     {
       link: 'https://twitter.com/deveras77',
-      imgSrc: 'styles/imgs/twitter.png',
+      imgSrc: '/styles/imgs/twitter.png',
       title: 'Navigate to Twitter and follow André R. Ferreira',
       hreflang: 'en'
     },
     {
       link: 'https://www.linkedin.com/in/andreraposoferreira',
-      imgSrc: 'styles/imgs/linkedin.png',
+      imgSrc: '/styles/imgs/linkedin.png',
       title: 'Navigate to LinkedIn and connect with André R. Ferreira',
       hreflang: 'en'
     },
     {
       link: 'https://github.com/deveras',
-      imgSrc: 'styles/imgs/github.png',
+      imgSrc: '/styles/imgs/github.png',
       title: 'Navigate to Github and follow André R. Ferreira',
       hreflang: 'en'
     }

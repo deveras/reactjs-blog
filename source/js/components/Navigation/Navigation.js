@@ -14,31 +14,31 @@ function Navigation (props) {
       hreflang: 'en'
     },
     {
-      link: 'articles',
+      link: '/articles',
       description: 'Articles',
       title: 'Navigate to Articles',
       hreflang: 'en'
     },
     {
-      link: 'tutorials',
+      link: '/tutorials',
       description: 'Tutorials',
       title: 'Navigate to Tutorials',
       hreflang: 'en'
     },
     {
-      link: 'resources',
+      link: '/resources',
       description: 'Resources',
       title: 'Navigate to Resources',
       hreflang: 'en'
     },
     {
-      link: 'about',
+      link: '/about',
       description: 'About',
       title: 'Navigate to About',
       hreflang: 'en'
     },
     {
-      link: 'contact',
+      link: '/contact',
       description: 'Contact',
       title: 'Navigate to Contact',
       hreflang: 'en'
