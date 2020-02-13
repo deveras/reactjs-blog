@@ -20,6 +20,7 @@ html, body {
   display: flex;
   flex-direction:row;
   min-height: 100vh;
+  background-color: rgb(252, 251, 247);
 
   &> section {
     position: relative;
@@ -145,6 +146,31 @@ html, body {
 
     aside {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #app>section {
+    &:first-of-type {
+      margin-top: 0px;
+    }
+    section {
+      article p {
+        padding-right: 0;
+      }
+      &>aside {
+        margin: 20px;
+
+        ul li p {
+          display: inline-block;
+
+          &:first-of-type:after {
+            content: ',\00a0'
+          }
+
+        }
+      }
     }
   }
 }
