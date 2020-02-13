@@ -1,6 +1,9 @@
 import React from 'react';
 
 function About () {
+  const northumbria =
+    'https://london.northumbria.ac.uk/blog/11th-international-conference-on-global-security-safety-and-sustainability/';
+
   return (
     <section>
       <section>
@@ -21,7 +24,11 @@ function About () {
             the top of Maslow's pyramid. Knowing where I was, I couldn't stop
             myself. My phycological multipotentiality in tandem with my Einstein
             like passionate curiosity, drove me from taking a Cyber Security
-            Masters from Northumbria University to attempting an MBA at{' '}
+            Masters from{' '}
+            <a href={northumbria} target="_blank">
+              Northumbria University
+            </a>{' '}
+            to attempting an MBA at{' '}
             <span lang="pt-PT">Universidade de Coimbra</span>. During these
             endeavours and despite a short-term memory of only a few gigabytes,
             I managed to achieve things I never thought I would. Nonetheless,
@@ -30,21 +37,6 @@ function About () {
             really hurts when you lift your eyes and have a look around, but its
             again time to forget time and have some fun. I hope you enjoy the
             blog.
-          </p>
-          <p>
-            Professionally, I've performed in many roles with different levels
-            of responsibility, in many market verticals. I've worked in small
-            little shops of 2 programmers and in multi-cultural internationally
-            renowned web companies with hundreds, enjoying them all. I've played
-            with a lot of different technologies and shared professional
-            experiences with a lot of smart people from different parts of the
-            world while based in Portugal, Ireland, Spain and England. I’ve
-            travelled to closer and distant countries like Mexico and the US to
-            support customers and colleagues alike. I've experienced developing
-            applications for: Smart TVs, PlayStation, Nintendo, X-Box, Roku,
-            mobiles and desktops alike. I've done backend, I’ve done frontend,
-            I've used waterfall, Agile and Kanban, but time flies when I'm
-            programming.
           </p>
           <p>
             Outside of the office, I enjoy wine tasting, repeating good meals,
@@ -64,6 +56,21 @@ function About () {
             show some remarkable progress for someone that didn't have a clue
             what he was doing in the beginning (it's great to have friends and
             the Internet).
+          </p>
+          <p>
+            Professionally, I've performed in many roles with different levels
+            of responsibility, in many market verticals. I've worked in small
+            little shops of 2 programmers and in multi-cultural internationally
+            renowned web companies with hundreds, enjoying them all. I've played
+            with a lot of different technologies and shared professional
+            experiences with a lot of smart people from different parts of the
+            world while based in Portugal, Ireland, Spain and England. I’ve
+            travelled to closer and distant countries like Mexico and the US to
+            support customers and colleagues alike. I've experienced developing
+            applications for: Smart TVs, PlayStation, Nintendo, X-Box, Roku,
+            mobiles and desktops alike. I've done backend, I’ve done frontend,
+            I've used waterfall, Agile and Kanban, but time flies when I'm
+            programming.
           </p>
         </article>
 
@@ -101,7 +108,7 @@ function About () {
 
       <section>
         <article>
-          <h1>My Cyber Security disertation abstract</h1>
+          <h1>My cyber security disertation abstract</h1>
           <h2>
             An event-driven simulation on VANETs security using physical layer
             security of wireless communications
