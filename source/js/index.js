@@ -14,6 +14,7 @@ import Resource from './pages/Resource/Resource';
 import Resources from './pages/Resources/Resources';
 import Tutorial from './pages/Tutorial/Tutorial';
 import Tutorials from './pages/Tutorials/Tutorials';
+import NoMatch from './pages/NoMatch/NoMatch';
 
 function App () {
   return (
@@ -39,6 +40,7 @@ function App () {
             path="/tutorials/:articleId"
             component={Tutorial}
           />
+          <ReactRouterDOM.Route component={NoMatch} />
         </ReactRouterDOM.Switch>
       </React.StrictMode>
     </ReactRouterDOM.BrowserRouter>
